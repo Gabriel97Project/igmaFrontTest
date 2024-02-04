@@ -1,3 +1,6 @@
+
+
+
 export const spaceFontSizeBorderLineHeight={
   lineHeight:{
     lineHeightXxs: '100%',
@@ -29,6 +32,14 @@ export const spaceFontSizeBorderLineHeight={
     fontSizeDisplay: '80px',
     fontSizeGiant:'96px'
 
+  },
+  
+  fontWeight:{
+    fontWeightExtrabold: 800,
+    fontWeightBold: 700,
+    fontWeightSemibold: 600,
+    fontWeightMedium: 400,
+    fontWeightRegular: 300
   },
 
   borderRadius:{
@@ -79,5 +90,6 @@ export const spaceFontSizeBorderLineHeight={
 
 
 
-  }
+  },
+
 }

@@ -5,7 +5,9 @@ import {
   SmartphoneFourthColumnStyle,
   SmartphoneSecoundColumnStyle,
   SmartphoneThirdColumnStyle,
-  IgmaPresentationStyle
+  IgmaPresentationStyle,
+  EspacamentoAntesDeIgma,
+  IgmaPresentationText
 } from "./BodyStyle";
 import smartphoneImageOne from "../../assets/celular1.png";
 import smartphoneImageTwo from "../../assets/celular2.png";
@@ -19,12 +21,30 @@ import smartphoneImageNine from "../../assets/celular9.png";
 import smartphoneImageTen from "../../assets/celular10.png";
 import smartphoneImageEleven from "../../assets/celular11.png";
 import smartphoneImageTwelve from "../../assets/celular12.png";
-import presentationImage from "../../assets/Image.png"
+import presentationImage from "../../assets/Image.png";
+import igmaLogo from "../../assets/logotipoIgma.svg"
+
+
+
 export default function Body(){
   return(
     <BodyStyle>
       <IgmaPresentationStyle>
-       <img src={presentationImage} alt=""/>
+        <div id="igmaPresentationImage">
+          <img src={presentationImage} alt=""/>
+        </div>
+        <IgmaPresentationText>
+           <p id="igma">Prazer, somos <EspacamentoAntesDeIgma><img id="igmaLogo" src={igmaLogo} alt="Logo marca da Igma" /></EspacamentoAntesDeIgma> </p>
+            <p id="visionMessage">Acreditamos em um mundo onde experiências incríveis são essenciais.</p>
+            <p id="qualitiesMessage">
+              Unimos design e tecnologia para resolver problemas complexos de empresas.
+              Criamos produtos digitais que revolucionam o relacionamento entre empresas
+              e consumidores.
+            </p>
+        </IgmaPresentationText>
+           
+       
+     
 
        {/* colocar identificaçao alt */}
       </IgmaPresentationStyle>
