@@ -1,10 +1,10 @@
 import { styled } from "styled-components";
 import { spaceFontSizeBorderLineHeight } from "../../tokens/spaceFontSizeBorderLineHeight/spaceFontSizeBorderLineHeight";
-import { colors } from "../../tokens/colors/colors"
+
+import { breakpoint } from "../../tokens/breakpoint/breakpoint";
 
 export const BodyStyle = styled.div`
-  width:1624px;
-  height:100v;
+
   //background-color:red;
   display:flex;
   flex-direction:column;
@@ -16,85 +16,83 @@ export const BodyStyle = styled.div`
 export const IgmaPresentationStyle = styled.div`
   //background-color:gray;
   width:100%;
-  height:900px;
+
   position:relative; 
   display: flex;
   flex-direction:row;
   justify-content:space-around;
-  align-items:center;
+  align-items:start;
   border: solid 2px;
-  #vetorImage{
-    width:60px;
-    height:157px;
-    position:absolute;
-    align-self:center;
-    left:95px;
-    bottom:305px;
-   }
-  #igmaPresentationImages{
-    display: flex;
-    align-items: flex-end;
-    //background-color:red;
-    height:100%;
-   #presentationImage{
-   
-    height:768px;
-    top:132px;
-    
-   };
-
+  padding-top:${spaceFontSizeBorderLineHeight.spacingStack.spacingStackXxl};
 
   
+
+  
+  @media (min-width: ${breakpoint.breakPointSize.breakpointLg}) {
+        /* Defina seus estilos para telas maiores que 1440 pixels aqui */
+        width:1624px;
+        height:900px;
+        background-color:yellow;
+        
+
+  };
+
+  @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) {
+        /* Defina seus estilos para telas maiores que 1440 pixels aqui */
+        width:1296px;
+        height:800px;
+        
   }
-  
+      @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
+        /* Defina seus estilos para telas maiores que 1440 pixels aqui */
+        width:944px;
+        height:584px;
+        background-color:green;
+        display: flex;
+        flex-direction:column-reverse;
+        
+        
+      }
+      @media (max-width:  ${breakpoint.breakPointSize.breakpointXs}) {
+        /* Defina seus estilos para telas maiores que 1440 pixels aqui */
+        width:90%;
+        margin:auto;
+        height:1062px;
+        background-color:red;
+        padding-top:${spaceFontSizeBorderLineHeight.spacingStack.spacingStackXxs}
+      }
 `;
 
 
-
-export const IgmaPresentationText = styled.div`
-
-  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-
-  //background-color:green;
-  width:663px;
-  height:556px;
-  margin-bottom:100px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size:${spaceFontSizeBorderLineHeight.fontSize.fontSizeMd};
-  font-weight:${spaceFontSizeBorderLineHeight.fontWeight.fontWeightMedium};
-  line-height:${spaceFontSizeBorderLineHeight.lineHeight.lineHeightSm};
-  color:${colors.baseColors.colorBaseDarkMain};
-  text-align:left;
-
-  #visionMessage{
-  /*   //padding-top:${spaceFontSizeBorderLineHeight.spacingStack.spacingStackXl}; */
-    font-size:${spaceFontSizeBorderLineHeight.fontSize.fontSizeXxl};
-    font-weight:${spaceFontSizeBorderLineHeight.fontWeight.fontWeightSemibold};
-    line-height:${spaceFontSizeBorderLineHeight.lineHeight.lineHeightSm};
-    text-align:left;
-    color:${colors.baseColors.colorBaseDarkHighlight}
-  };
-
-  #qualitiesMessage{
-    /* padding-top:${spaceFontSizeBorderLineHeight.spacingStack.spacingStackMd}; */
-    font-size:${spaceFontSizeBorderLineHeight.fontSize.fontSizeLg};
-    font-weight:${spaceFontSizeBorderLineHeight.fontWeight.fontWeightSemibold};
-    line-height:${spaceFontSizeBorderLineHeight.lineHeight.lineHeightLg};
-    text-align:left;
-    color:${colors.baseColors.colorBaseDarkMain}
-  
-  };
+export const IgmaPresentationContent = styled.div`
+   display: flex;
+   flex-direction: row;
+   justify-content:space-between;
+   margin: auto;
+   width:90%;
+   @media (min-width:  ${breakpoint.breakPointSize.breakpointSm}) {
+       
+    
+        width:80%;
+     
+        
+        
+      }
+   @media (max-width:  ${breakpoint.breakPointSize.breakpointXs}) {
+        /* Defina seus estilos para telas maiores que 1440 pixels aqui */
+        /* width:944px; */
+        /* height:584px; */
+        
+        background-color:green;
+        display: flex;
+        flex-direction:column-reverse;
+        
+        
+      }
 `
 
-export const EspacamentoAntesDeIgma = styled.span`
-  margin-left: ${spaceFontSizeBorderLineHeight.spacingInLine.spacingInlineXxxs};
-  //background-color:red;
-  #igmaLogo{
-    width:73px;
-    height:30px;
-    
-  }
-`;
+
+
 export const SmartphoneAnimationStyle = styled.div`
   width:937px;
   height:900px;

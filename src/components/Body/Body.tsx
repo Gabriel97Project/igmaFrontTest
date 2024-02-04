@@ -6,9 +6,12 @@ import {
   SmartphoneSecoundColumnStyle,
   SmartphoneThirdColumnStyle,
   IgmaPresentationStyle,
-  EspacamentoAntesDeIgma,
-  IgmaPresentationText
+  IgmaPresentationContent,
+  
 } from "./BodyStyle";
+
+import { IgmaPresentationText } from "../IgmaPresentationText/style"; 
+
 import smartphoneImageOne from "../../assets/celular1.png";
 import smartphoneImageTwo from "../../assets/celular2.png";
 import smartphoneImageThree from "../../assets/celular3.png";
@@ -21,37 +24,37 @@ import smartphoneImageNine from "../../assets/celular9.png";
 import smartphoneImageTen from "../../assets/celular10.png";
 import smartphoneImageEleven from "../../assets/celular11.png";
 import smartphoneImageTwelve from "../../assets/celular12.png";
-import presentationImage from "../../assets/Image.png";
-import igmaLogo from "../../assets/logotipoIgma.svg"
-import vetorHero from "../../assets/vectorHero.svg"
+
+
+import logoIgma from "../../assets/logotipoIgma.svg"
+import IgmaImage from "../IgmaImage";
+import { IgmaPresentationImageBox } from "../IgmaImage/style";
+import IgmaPresentationTextCountainer from "../IgmaPresentationText";
+import SVGGrid from "../LogoGrid";
+
 
 
 
 export default function Body(){
+
+
+  const svgs = [logoIgma,logoIgma,logoIgma,logoIgma,logoIgma,logoIgma,logoIgma,logoIgma,logoIgma,logoIgma,logoIgma,logoIgma];
   return(
     <BodyStyle>
       <IgmaPresentationStyle>
-      <img id="vetorImage" src={vetorHero} alt=""/>
-        <div id="igmaPresentationImages">
-          <img id="presentationImage" src={presentationImage} alt=""/>
-          
-        </div>
-        <IgmaPresentationText>
-           <p id="igma">Prazer, somos <EspacamentoAntesDeIgma><img id="igmaLogo" src={igmaLogo} alt="Logo marca da Igma" /></EspacamentoAntesDeIgma> </p>
-            <p id="visionMessage">Acreditamos em um mundo onde experiências incríveis são essenciais.</p>
-            <p id="qualitiesMessage">
-              Unimos design e tecnologia para resolver problemas complexos de empresas.
-              Criamos produtos digitais que revolucionam o relacionamento entre empresas
-              e consumidores.
-            </p>
-        </IgmaPresentationText>
+        <IgmaPresentationContent>
+          <IgmaImage/>
+        <IgmaPresentationTextCountainer/>
+        </IgmaPresentationContent>
+        
            
        
      
 
        {/* colocar identificaçao alt */}
       </IgmaPresentationStyle>
-      <SmartphoneAnimationStyle>
+      <SVGGrid svgs={svgs} tamanho={"210px"}/>
+     {/*  <SmartphoneAnimationStyle>
         <SmartphoneFirstColumnStyle>
           <img src={smartphoneImageOne} alt=""/>
           <img src={smartphoneImageTwo} alt=""/>
@@ -73,7 +76,7 @@ export default function Body(){
           <img src={smartphoneImageTwelve} alt=""/>
         </SmartphoneFourthColumnStyle>
 
-      </SmartphoneAnimationStyle>
+      </SmartphoneAnimationStyle> */}
     </BodyStyle>
   )
 }
