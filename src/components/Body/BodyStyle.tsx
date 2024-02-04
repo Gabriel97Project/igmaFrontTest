@@ -17,23 +17,32 @@ export const IgmaPresentationStyle = styled.div`
   //background-color:gray;
   width:100%;
   height:900px;
-  //position:relative; 
+  position:relative; 
   display: flex;
   flex-direction:row;
   justify-content:space-around;
   align-items:center;
   border: solid 2px;
-  #igmaPresentationImage{
+  #vetorImage{
+    width:60px;
+    height:157px;
+    position:absolute;
+    align-self:center;
+    left:95px;
+    bottom:305px;
+   }
+  #igmaPresentationImages{
     display: flex;
     align-items: flex-end;
     //background-color:red;
     height:100%;
-   img{
+   #presentationImage{
    
     height:768px;
     top:132px;
     
-   }
+   };
+
 
   
   }

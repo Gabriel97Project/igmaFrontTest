@@ -23,6 +23,7 @@ import smartphoneImageEleven from "../../assets/celular11.png";
 import smartphoneImageTwelve from "../../assets/celular12.png";
 import presentationImage from "../../assets/Image.png";
 import igmaLogo from "../../assets/logotipoIgma.svg"
+import vetorHero from "../../assets/vectorHero.svg"
 
 
 
@@ -30,8 +31,10 @@ export default function Body(){
   return(
     <BodyStyle>
       <IgmaPresentationStyle>
-        <div id="igmaPresentationImage">
-          <img src={presentationImage} alt=""/>
+      <img id="vetorImage" src={vetorHero} alt=""/>
+        <div id="igmaPresentationImages">
+          <img id="presentationImage" src={presentationImage} alt=""/>
+          
         </div>
         <IgmaPresentationText>
            <p id="igma">Prazer, somos <EspacamentoAntesDeIgma><img id="igmaLogo" src={igmaLogo} alt="Logo marca da Igma" /></EspacamentoAntesDeIgma> </p>
