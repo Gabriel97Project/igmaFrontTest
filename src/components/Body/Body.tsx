@@ -6,6 +6,7 @@ import {
   BodyStyle,
   IgmaPresentationStyle,
   IgmaPresentationContent,
+  NewsletterAndSmartphoneImagesContainer,
   
 } from "./BodyStyle";
 import SmartphoneImagesContainer from "../SmartphoneImagesContainer";
@@ -28,8 +29,11 @@ export default function Body(){
       </IgmaPresentationStyle>
       
       <GridAndTextContent/>
-      <NewsletterContent/>
-    <SmartphoneImagesContainer/>
+      <NewsletterAndSmartphoneImagesContainer>
+        <NewsletterContent/>
+        <SmartphoneImagesContainer/>
+      </NewsletterAndSmartphoneImagesContainer>
+      
     </BodyStyle>
   )
 }
