@@ -20,12 +20,12 @@ export const IgmaPresentationTextBox = styled.div`
   
     };
   
-      @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) {
+      @media (max-width: ${breakpoint.breakPointSize.breakpointLg}) and (min-width: ${breakpoint.breakPointSize.breakpointMd}) {
         font-size:${spaceFontSizeBorderLineHeight.fontSize.fontSizeXs};
         width:531px;
         height:466px;
       }
-       @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
+       @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) and (min-width: ${breakpoint.breakPointSize.breakpointSm}) {
         
         width:384px;
         height:374px;
@@ -33,7 +33,7 @@ export const IgmaPresentationTextBox = styled.div`
      
           
       }
-      @media (max-width:  ${breakpoint.breakPointSize.breakpointXs}) {
+      @media  (max-width:  ${breakpoint.breakPointSize.breakpointSm})and (min-width: ${breakpoint.breakPointSize.breakpointXs}){
         width:342px;
         height:398px;
         

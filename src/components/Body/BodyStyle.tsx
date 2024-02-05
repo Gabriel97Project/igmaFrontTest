@@ -14,7 +14,7 @@ export const BodyStyle = styled.div`
 
 
 export const IgmaPresentationStyle = styled.div`
-  //background-color:gray;
+  //background-color:greenyellow;
   width:100%;
 
   position:relative; 
@@ -32,18 +32,17 @@ export const IgmaPresentationStyle = styled.div`
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
         width:1624px;
         height:900px;
-        background-color:yellow;
-        
+       
 
   };
 
-  @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) {
+  @media (max-width: ${breakpoint.breakPointSize.breakpointLg}) and (min-width: ${breakpoint.breakPointSize.breakpointMd}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
         width:1296px;
         height:800px;
-        
+         background-color:greenyellow;
   }
-      @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
+      @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) and (min-width: ${breakpoint.breakPointSize.breakpointSm}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
         width:944px;
         height:584px;
@@ -53,7 +52,7 @@ export const IgmaPresentationStyle = styled.div`
         
         
       }
-      @media (max-width:  ${breakpoint.breakPointSize.breakpointXs}) {
+      @media (max-width:  ${breakpoint.breakPointSize.breakpointSm})and (min-width: ${breakpoint.breakPointSize.breakpointXs}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
         width:90%;
         margin:auto;
@@ -69,24 +68,32 @@ export const IgmaPresentationContent = styled.div`
    flex-direction: row;
    justify-content:space-between;
    margin: auto;
-   width:90%;
-   @media (min-width:  ${breakpoint.breakPointSize.breakpointSm}) {
-       
-    
+   
+ 
+      @media (min-width: ${breakpoint.breakPointSize.breakpointLg}) {
+        /* Defina seus estilos para telas maiores que 1440 pixels aqui */
+     
         width:80%;
+
+  };
+
+  @media (max-width: ${breakpoint.breakPointSize.breakpointLg}) and (min-width: ${breakpoint.breakPointSize.breakpointMd}) {
+        /* Defina seus estilos para telas maiores que 1440 pixels aqui */
+    background-color:red;
+    width:100%;
+  }
+      @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) and (min-width: ${breakpoint.breakPointSize.breakpointSm}) {
+        /* Defina seus estilos para telas maiores que 1440 pixels aqui */
+       
      
         
         
       }
-   @media (max-width:  ${breakpoint.breakPointSize.breakpointXs}) {
+      @media (max-width:  ${breakpoint.breakPointSize.breakpointSm})and (min-width: ${breakpoint.breakPointSize.breakpointXs}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
-        /* width:944px; */
-        /* height:584px; */
-        
         background-color:green;
         display: flex;
         flex-direction:column-reverse;
-        
         
       }
 `

@@ -31,6 +31,7 @@ import IgmaImage from "../IgmaImage";
 import { IgmaPresentationImageBox } from "../IgmaImage/style";
 import IgmaPresentationTextCountainer from "../IgmaPresentationText";
 import SVGGrid from "../LogoGrid";
+import GridAndTextContent from "../GridAndTextContent";
 
 
 
@@ -38,7 +39,7 @@ import SVGGrid from "../LogoGrid";
 export default function Body(){
 
 
-  const svgs = [logoIgma,logoIgma,logoIgma,logoIgma,logoIgma,logoIgma,logoIgma,logoIgma,logoIgma,logoIgma,logoIgma,logoIgma];
+ 
   return(
     <BodyStyle>
       <IgmaPresentationStyle>
@@ -53,7 +54,7 @@ export default function Body(){
 
        {/* colocar identificaçao alt */}
       </IgmaPresentationStyle>
-      <SVGGrid svgs={svgs} tamanho={"210px"}/>
+      <GridAndTextContent/>
      {/*  <SmartphoneAnimationStyle>
         <SmartphoneFirstColumnStyle>
           <img src={smartphoneImageOne} alt=""/>
