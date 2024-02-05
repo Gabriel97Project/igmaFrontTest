@@ -47,8 +47,8 @@ align-items: center;
 
 
 
-border: solid 1px;
-  background-color:green ;
+//border: solid 1px;
+  //background-color:green ;
  ${GridImage} {
    
     height: ${({ sizeSvg }) => sizeSvg};

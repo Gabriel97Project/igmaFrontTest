@@ -5,11 +5,12 @@ import {colors} from "../../tokens/colors/colors"
 
 
 export const FooterStyled =styled.div`
-
-  height:316px;
+  margin-top: 80px;
+  height:160px;
   display:flex;
   align-items:center;
   justify-content:space-between;
+  border-top: 1px solid;
   @media (min-width: ${breakpoint.breakPointSize.breakpointLg}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
         width: 1624px;
@@ -52,6 +53,7 @@ export const FooterIgmaTextStyled =styled.p`
   line-height:${spaceFontSizeBorderLineHeight.lineHeight.lineHeightLg};
   color:${colors.baseColors.colorBaseDarkMain};
   text-align:left;
+  margin: 0px;
 `
 
 export const FooterYearTextStyled =styled.p`

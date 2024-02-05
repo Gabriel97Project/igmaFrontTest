@@ -18,7 +18,6 @@ import NewsletterContent from "../NewsletterContent";
 export default function Body() {
 
 
-
   return (
     <BodyStyle>
       <IgmaPresentationStyle>

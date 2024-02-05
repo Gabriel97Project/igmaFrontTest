@@ -137,23 +137,25 @@ export const NewsletterNameInputStyle = styled.input<buttonPropsType>`
 
 export const NewsletterEmailStyle = styled(NewsletterNameInputStyle)`
 `
+type isDisabled = {
+  error: boolean;
+}
 
+export const NewsletterButtonStyle = styled.button<isDisabled>`
 
-export const NewsletterButtonStyle = styled.button`
-
-
+  cursor: pointer;
   height:48px;
   width:180px;
-  color:${colors.baseColors.colorBaseLightContrast};
   font-size:${spaceFontSizeBorderLineHeight.fontSize.fontSizeXs};
   font-weight:${spaceFontSizeBorderLineHeight.fontWeight.fontWeightSemibold};
   line-height:${spaceFontSizeBorderLineHeight.lineHeight.lineHeightLg};
   border-radius:${spaceFontSizeBorderLineHeight.borderRadius.borderRadiusNone};
-  background-color:${colors.baseColors.colorBaseDarkHighlight};
+  
   margin-top:${spaceFontSizeBorderLineHeight.spacingStack.spacingStackLg};
-  
-  
-;
+  background-color:${({error})=>  error ? colors.baseColors.colorBaseDarkContrastDisabled : colors.baseColors.colorBaseDarkHighlight};
+  color:${({error})=>  error ? colors.baseColors.colorBaseLightSecondary : colors.baseColors.colorBaseLightContrast} 
+ ;
+
 
 `
 

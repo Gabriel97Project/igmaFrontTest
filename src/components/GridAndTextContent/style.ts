@@ -7,7 +7,7 @@ import {colors} from "../../tokens/colors/colors"
 export const GridAndTextContentStyle = styled.div`
   width:1624px;
   height: 900px;
-  background-color:blue;
+  //background-color:blue;
 
 
   @media (min-width: ${breakpoint.breakPointSize.breakpointLg}) {

@@ -6,6 +6,7 @@ import { breakpoint } from "../../tokens/breakpoint/breakpoint";
 export const BodyStyle = styled.div`
 
   //background-color:red;
+  margin-bottom: 80px;
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -57,7 +58,7 @@ export const IgmaPresentationStyle = styled.div`
         width:90%;
         margin:auto;
         height:1062px;
-       
+       margin-top: 40px;
         padding-top:${spaceFontSizeBorderLineHeight.spacingStack.spacingStackXxs}
       }
 `;

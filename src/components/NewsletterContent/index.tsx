@@ -10,6 +10,7 @@ import {
   ErrorText
 } from './style'
 import { validateEmail, validateName } from '../../utils/utils';
+import Modal from '../InfoModal';
 
 type buttonProps = {
   buttonText: string;
@@ -20,6 +21,14 @@ function NewsletterContent () {
   const [emailError, setEmailError] = useState<boolean>(false);
   const [name, setName] = useState<string | undefined>(undefined);
   const [ email, setEmail] = useState<string | undefined> (undefined);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
 useEffect(()=>{
 if(email){
@@ -38,8 +47,21 @@ useEffect(()=>{
     }
     return setNameError(false);
 },[name])
+
+
+const checkDisableButton = ()=>{
+  if(nameError || emailError || !name || !email ){
+    return true
+  }
+  return false
+}
+
+
   return (
     <NewsletterContentStyle>
+      {isModalOpen && (
+        <Modal text="Você agora se manterá informado sobre todas as novidades" onClose={closeModal} />
+      )}
       <NewsletterToSingTextStyle>Assine nossa newsletter</NewsletterToSingTextStyle>
       <NewesletterInviteTextStyle>
         Desenvolva-se conosco com conteúdos sobre  Tecnologia e Design a cada 15 dias.
@@ -54,7 +76,7 @@ useEffect(()=>{
       </InputBox>
      
       
-      <NewsletterButtonStyle>Assinar Newslatter</NewsletterButtonStyle>
+      <NewsletterButtonStyle error={checkDisableButton()}  disabled={checkDisableButton()} onClick={()=> openModal()}>Assinar Newslatter</NewsletterButtonStyle>
     </NewsletterContentStyle>
   )
 }
