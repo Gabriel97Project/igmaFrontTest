@@ -32,7 +32,7 @@ export const GridAndTextContentStyle = styled.div`
         
         
       }
-      @media (max-width:  ${breakpoint.breakPointSize.breakpointSm})and (min-width: ${breakpoint.breakPointSize.breakpointXs}) {
+      @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
         width:390px;
         height:960px;
@@ -74,12 +74,13 @@ export const GridTextBoxStyle = styled.p`
         background-color:yellow;
         
       }
-      @media (max-width:  ${breakpoint.breakPointSize.breakpointSm})and (min-width: ${breakpoint.breakPointSize.breakpointXs}) {
+      @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}){
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
         width:342px;
         height:96px;
         background-color:aqua;
-       
+        padding-top:${spaceFontSizeBorderLineHeight.spacingStack.spacingStackXxl};
+        margin:0px;
       }
 
 `;
@@ -96,4 +97,10 @@ export const GridAndTexResponsiveSizeBox = styled.div`
 /*   @media (max-width: ${breakpoint.breakPointSize.breakpointLg}) and (min-width: ${breakpoint.breakPointSize.breakpointMd}){
     justify-content:space-around;
   } */
+  @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}){
+        /* Defina seus estilos para telas maiores que 1440 pixels aqui */
+      display:flex;
+      flex-direction:column;
+       
+  }
 `

@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import { breakpoint } from "../../tokens/breakpoint/breakpoint";
-
+import { spaceFontSizeBorderLineHeight } from "../../tokens/spaceFontSizeBorderLineHeight/spaceFontSizeBorderLineHeight";
 
 export const GridContainer = styled.div`
 
   display: grid;
+  
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap:100px; /* Espaçamento entre as colunas */
   background-color:red;
+  
   
  
   @media (min-width: ${breakpoint.breakPointSize.breakpointLg}) {
@@ -35,11 +37,15 @@ export const GridContainer = styled.div`
         background-color:yellow;
         
       }
-      @media (max-width:  ${breakpoint.breakPointSize.breakpointSm})and (min-width: ${breakpoint.breakPointSize.breakpointXs}) {
+      @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
         width:342px;
-        height:96px;
+        height:744px;
         background-color:aqua;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap:0px;
+        padding-top:${spaceFontSizeBorderLineHeight.spacingStack.spacingStackSm};
+      
        
       }
 `
@@ -74,9 +80,10 @@ export const GridItem = styled.div<{ tamanho: string }>`
     }
   }
 
-  @media (max-width: ${breakpoint.breakPointSize.breakpointSm}) and (min-width: ${breakpoint.breakPointSize.breakpointXs}) {
+  @media (max-width: ${breakpoint.breakPointSize.breakpointSm}) {
+    
     img {
-      /* max-height: 96px; */
+       max-height: 96px; 
     }
   }
 `;

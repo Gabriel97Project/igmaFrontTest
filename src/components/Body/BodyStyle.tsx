@@ -14,13 +14,13 @@ export const BodyStyle = styled.div`
 
 
 export const IgmaPresentationStyle = styled.div`
-  //background-color:greenyellow;
+  background-color:greenyellow;
   width:100%;
 
   position:relative; 
   display: flex;
   flex-direction:row;
-  justify-content:space-around;
+  justify-content:space-between;
   align-items:start;
   border: solid 2px;
   padding-top:${spaceFontSizeBorderLineHeight.spacingStack.spacingStackXxl};
@@ -45,14 +45,14 @@ export const IgmaPresentationStyle = styled.div`
       @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) and (min-width: ${breakpoint.breakPointSize.breakpointSm}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
         width:944px;
-        height:584px;
+        height:504px;
         background-color:green;
         display: flex;
         flex-direction:column-reverse;
         
         
       }
-      @media (max-width:  ${breakpoint.breakPointSize.breakpointSm})and (min-width: ${breakpoint.breakPointSize.breakpointXs}) {
+      @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}){
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
         width:90%;
         margin:auto;
@@ -68,7 +68,7 @@ export const IgmaPresentationContent = styled.div`
    flex-direction: row;
    justify-content:space-between;
    margin: auto;
-   
+   height:100%;
  
       @media (min-width: ${breakpoint.breakPointSize.breakpointLg}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
@@ -79,59 +79,23 @@ export const IgmaPresentationContent = styled.div`
 
   @media (max-width: ${breakpoint.breakPointSize.breakpointLg}) and (min-width: ${breakpoint.breakPointSize.breakpointMd}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
-    background-color:red;
-    width:100%;
+   // background-color:red;
+    width:80%;
   }
       @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) and (min-width: ${breakpoint.breakPointSize.breakpointSm}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
        
-     
+        background-color:violet;
+        width:80%;
         
         
       }
-      @media (max-width:  ${breakpoint.breakPointSize.breakpointSm})and (min-width: ${breakpoint.breakPointSize.breakpointXs}) {
+      @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}){
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
-        background-color:green;
+        //background-color:blue;
         display: flex;
         flex-direction:column-reverse;
         
       }
 `
 
-
-
-export const SmartphoneAnimationStyle = styled.div`
-  width:937px;
-  height:900px;
-  background-color:white;
-  display: flex;
-  flex-direction:row;
-  justify-content:space-around;
-`;
-export const SmartphoneFirstColumnStyle = styled.div`
-  //background-color:gray;
-  display: flex;
-  flex-direction:column;
-  justify-content:space-between;
-`;
-
-export const SmartphoneSecoundColumnStyle = styled.div`
-  //background-color:aliceblue;
-  display: flex;
-  flex-direction:column;
-  justify-content:space-between;
-`;
-
-export const SmartphoneThirdColumnStyle = styled.div`
- // background-color:azure;
-  display: flex;
-  flex-direction:column;
-  justify-content:space-between;
-`;
-
-export const SmartphoneFourthColumnStyle = styled.div`
-  //background-color:blueviolet;
-  display: flex;
-  flex-direction:column;
-  justify-content:space-between;
-`;

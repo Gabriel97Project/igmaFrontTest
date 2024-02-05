@@ -11,7 +11,7 @@ export const IgmaPresentationTextBox = styled.div`
  /*  width:663px;
   height:556px; */
   margin-bottom:100px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+ /*  font-family: 'Plus Jakarta Sans', sans-serif; */
     @media (min-width: ${breakpoint.breakPointSize.breakpointLg}) {
         
       width:663px;
@@ -33,7 +33,7 @@ export const IgmaPresentationTextBox = styled.div`
      
           
       }
-      @media  (max-width:  ${breakpoint.breakPointSize.breakpointSm})and (min-width: ${breakpoint.breakPointSize.breakpointXs}){
+      @media  (max-width:  ${breakpoint.breakPointSize.breakpointSm}){
         width:342px;
         height:398px;
         
@@ -56,18 +56,18 @@ export const IgmaPresentationText = styled.p`
 
     };
 
-    @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) {
+    @media (max-width: ${breakpoint.breakPointSize.breakpointLg}) and (min-width: ${breakpoint.breakPointSize.breakpointMd}) {
       font-size:${spaceFontSizeBorderLineHeight.fontSize.fontSizeXs};
     }
-     @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
+     @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) and (min-width: ${breakpoint.breakPointSize.breakpointSm}) {
       
       font-size:${spaceFontSizeBorderLineHeight.fontSize.fontSizeXxs};
    
         
     }
-    @media (max-width:  ${breakpoint.breakPointSize.breakpointXs}) {
-    
-      
+    @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
+     
+      font-size:${spaceFontSizeBorderLineHeight.fontSize.fontSizeXxs};
     }
 
 `
@@ -97,16 +97,21 @@ export const VisionMessage = styled.h1`
 
     };
 
-    @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) {
+    @media (max-width: ${breakpoint.breakPointSize.breakpointLg}) and (min-width: ${breakpoint.breakPointSize.breakpointMd}) {
       font-size:${spaceFontSizeBorderLineHeight.fontSize.fontSizeXl};
           
     }
-    @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
+    @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) and (min-width: ${breakpoint.breakPointSize.breakpointSm}) {
        
       font-size:${spaceFontSizeBorderLineHeight.fontSize.fontSizeLg};
       
         
-    }
+    };
+    @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
+    
+      font-size:${spaceFontSizeBorderLineHeight.fontSize.fontSizeLg};
+  }
+
 
 
 
@@ -124,14 +129,20 @@ export const QualitiesMessage = styled.p`
 
     };
 
-    @media (min-width:  ${breakpoint.breakPointSize.breakpointMd}) {
+    @media (max-width: ${breakpoint.breakPointSize.breakpointLg}) and (min-width: ${breakpoint.breakPointSize.breakpointMd}) {
       font-size:${spaceFontSizeBorderLineHeight.fontSize.fontSizeMd};
           
-    }
-    @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
+    };
+    @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) and (min-width: ${breakpoint.breakPointSize.breakpointSm}) {
       font-size:${spaceFontSizeBorderLineHeight.fontSize.fontSizeXs};
         
-    }
+    };
+    @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
+    
+    font-size:${spaceFontSizeBorderLineHeight.fontSize.fontSizeXs};
+}
+
+
 
 
   

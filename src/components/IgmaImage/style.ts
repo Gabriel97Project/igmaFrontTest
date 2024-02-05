@@ -7,12 +7,45 @@ export const PresentationImageContainer = styled.div`
 `
 
 export const VetorImageStyle  = styled.img`
-  width:60px;
-    height:157px;
+    
+    
     position:absolute;
-    align-self:center;
-    left:-25px;
-    bottom:40%;
+   
+    @media (min-width: ${breakpoint.breakPointSize.breakpointLg}) {
+        /* Defina seus estilos para telas maiores que 1440 pixels aqui */
+     height:157px;
+      width:60px;
+      align-self:center;
+    
+      left:-25px;
+      bottom:50%;
+
+  };
+
+  @media (max-width: ${breakpoint.breakPointSize.breakpointLg}) and (min-width: ${breakpoint.breakPointSize.breakpointMd}) {
+        /* Defina seus estilos para telas maiores que 1440 pixels aqui */
+     
+   
+      left:-25px;
+      bottom:50%;
+       
+  }
+      @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) and (min-width: ${breakpoint.breakPointSize.breakpointSm}) {
+        /* Defina seus estilos para telas maiores que 1440 pixels aqui */
+        left:-25px;
+      bottom:30%;
+      
+      
+        
+        
+      }
+      @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
+        /* Defina seus estilos para telas maiores que 1440 pixels aqui */
+       
+        left:-25px;
+        bottom:35%;
+      }
+
 `
 
 export const IgmaPresentationImageBox  = styled.div`
@@ -34,13 +67,13 @@ export const PresentationImage  = styled.img`
 
   };
 
-  @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) {
+  @media (max-width: ${breakpoint.breakPointSize.breakpointLg}) and (min-width: ${breakpoint.breakPointSize.breakpointMd}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
         width:422px;
         height:680px;
         
   }
-      @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
+      @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) and (min-width: ${breakpoint.breakPointSize.breakpointSm}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
         width:304px;
         height:504px;
@@ -49,9 +82,9 @@ export const PresentationImage  = styled.img`
         
         
       }
-      @media (max-width:  ${breakpoint.breakPointSize.breakpointXs}) {
+      @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
-        width:90%;
+        width:366px;
         height:560px;
        
       }
