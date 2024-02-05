@@ -14,7 +14,7 @@ export const BodyStyle = styled.div`
 
 
 export const IgmaPresentationStyle = styled.div`
-  background-color:greenyellow;
+ 
   width:100%;
 
   position:relative; 
@@ -22,7 +22,7 @@ export const IgmaPresentationStyle = styled.div`
   flex-direction:row;
   justify-content:space-between;
   align-items:start;
-  border: solid 2px;
+
   padding-top:${spaceFontSizeBorderLineHeight.spacingStack.spacingStackXxl};
 
   
@@ -40,13 +40,13 @@ export const IgmaPresentationStyle = styled.div`
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
         width:1296px;
         height:800px;
-         background-color:greenyellow;
+        
   }
       @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) and (min-width: ${breakpoint.breakPointSize.breakpointSm}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
         width:944px;
         height:504px;
-        background-color:green;
+     
         display: flex;
         flex-direction:column-reverse;
         
@@ -57,7 +57,7 @@ export const IgmaPresentationStyle = styled.div`
         width:90%;
         margin:auto;
         height:1062px;
-        background-color:red;
+       
         padding-top:${spaceFontSizeBorderLineHeight.spacingStack.spacingStackXxs}
       }
 `;
@@ -85,7 +85,7 @@ export const IgmaPresentationContent = styled.div`
       @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) and (min-width: ${breakpoint.breakPointSize.breakpointSm}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
        
-        background-color:violet;
+
         width:80%;
         
         
@@ -106,7 +106,7 @@ export const NewsletterAndSmartphoneImagesContainer= styled.div`
   flex-direction:row;
   justify-content:space-between;
   align-items:center;
-  border: solid 1px;
+
 
   @media (min-width: ${breakpoint.breakPointSize.breakpointLg}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */

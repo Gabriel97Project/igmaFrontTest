@@ -1,42 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
-import { GridContainer, GridItem } from './style';
+import { GridContainer, GridItem, GridImage } from './style';
 
 
 interface SVGGridProps {
-  svgs: React.ReactNode[];
-  tamanho: string; // Adicionando a propriedade de tamanho
+  svgs: React.ReactNode[]; 
+  sizeSvg:string; 
 }
-
-/* const SVGGridContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap:100px;  Espaçamento entre as colunas 
-  background-color:red;
-  width:937px;
-  height:764px;
-
-`;
- */
-/* 
-const SVGWrapper = styled.div<{ tamanho: string }>`
-  border: solid 1px;
- 
-  svg {
-    width: auto ;
-    height: ${({ tamanho }) => tamanho};
-    display: block;
-    margin: 0 auto; Centralizar o SVG dentro do contêiner 
-  
-  }
-`; */
-
-const SVGGrid: React.FC<SVGGridProps> = ({ svgs, tamanho }) => {
+/* A função abaixo usa um map em um array de svgs e com esses svgs,
+criamos um estilo para montar um grid e mostrar as imagens. Os  svgs 
+sao passados do componente GridAndText content*/
+const SVGGrid: React.FC<SVGGridProps> = ({ svgs, sizeSvg }) => {
   return (
     <GridContainer>
       {svgs.map((svg, index) => (
-        <GridItem key={index} tamanho={tamanho}>
-          <img src={svg as string}  alt={`svg-${index}`} /> 
+        <GridItem key={index} sizeSvg={sizeSvg}>
+          <GridImage className='gridImgSize' src={svg as string}  alt={`svg-${index}`} /> 
         </GridItem>
       ))}
     </GridContainer>

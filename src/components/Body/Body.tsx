@@ -2,12 +2,12 @@
 import IgmaImage from "../IgmaImage";
 import IgmaPresentationTextCountainer from "../IgmaPresentationText";
 import GridAndTextContent from "../GridAndTextContent";
-import { 
+import {
   BodyStyle,
   IgmaPresentationStyle,
   IgmaPresentationContent,
   NewsletterAndSmartphoneImagesContainer,
-  
+
 } from "./BodyStyle";
 import SmartphoneImagesContainer from "../SmartphoneImagesContainer";
 import NewsletterContent from "../NewsletterContent";
@@ -15,25 +15,24 @@ import NewsletterContent from "../NewsletterContent";
 
 
 
-export default function Body(){
+export default function Body() {
 
 
- 
-  return(
+
+  return (
     <BodyStyle>
       <IgmaPresentationStyle>
         <IgmaPresentationContent>
-          <IgmaImage/>
-        <IgmaPresentationTextCountainer/>
+          <IgmaImage />
+          <IgmaPresentationTextCountainer />
         </IgmaPresentationContent>
       </IgmaPresentationStyle>
-      
-      <GridAndTextContent/>
+      <GridAndTextContent />
       <NewsletterAndSmartphoneImagesContainer>
-        <NewsletterContent/>
-        <SmartphoneImagesContainer/>
+        <NewsletterContent />
+        <SmartphoneImagesContainer />
       </NewsletterAndSmartphoneImagesContainer>
-      
+
     </BodyStyle>
   )
 }

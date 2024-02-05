@@ -12,13 +12,12 @@ import google from "../../assets/google.svg";
 import honda from "../../assets/honda.svg";
 import ambev from "../../assets/ambev.svg";
 import sirioLibanes from "../../assets/hsl.svg";
-
-
+import brasilPres from "../../assets/brasilPrev.svg"
 
 
 function GridAndTextContent() {
 
-  const svgs = [mrv, mrv,idb , comgas, bayer, cvc, centauro, neoEnergia, google, honda, ambev, sirioLibanes];
+  const svgs = [mrv, cvc ,idb , comgas, bayer, cvc, centauro, neoEnergia, google, honda, ambev, sirioLibanes];
   
   return (
     <Styled.GridAndTextContentStyle>
@@ -27,7 +26,7 @@ function GridAndTextContent() {
           Expressamos mais de 20 anos de experiência criando plataformas digitais para
           as maiores empresas do Brasil, impactando milhões de pessoas.
         </Styled.GridTextBoxStyle>
-        <SVGGrid svgs={svgs} tamanho={"176px"} />
+        <SVGGrid svgs={svgs} sizeSvg={"176px"} />
       </Styled.GridAndTexResponsiveSizeBox>
 
     </Styled.GridAndTextContentStyle>

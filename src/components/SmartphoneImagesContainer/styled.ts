@@ -82,7 +82,6 @@ export const SmartphoneFourthColumnStyle = styled.div`
 `;
 
 export const SmartphoneSvgs = styled.img`
-     
 
             @media (max-width: ${breakpoint.breakPointSize.breakpointLg}) and (min-width: ${breakpoint.breakPointSize.breakpointMd}) {
               width: 165px; /* Ajuste o valor conforme necessário */
@@ -104,7 +103,7 @@ export const SmartphoneMobileSvgStyle = styled.div`
    height:300px;
    display:flex;
    flex-direction:row;
-
+  
    position: relative; 
 
    @media (min-width: ${breakpoint.breakPointSize.breakpointLg}) {

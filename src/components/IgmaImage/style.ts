@@ -42,7 +42,7 @@ export const VetorImageStyle  = styled.img`
       @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
        
-        left:-25px;
+        left:-18px;
         bottom:35%;
       }
 

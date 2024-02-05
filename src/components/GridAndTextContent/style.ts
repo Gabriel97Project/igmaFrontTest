@@ -7,7 +7,8 @@ import {colors} from "../../tokens/colors/colors"
 export const GridAndTextContentStyle = styled.div`
   width:1624px;
   height: 900px;
-  border:solid 1px;
+  background-color:blue;
+
 
   @media (min-width: ${breakpoint.breakPointSize.breakpointLg}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
@@ -63,7 +64,7 @@ export const GridTextBoxStyle = styled.p`
         width:421px;
         height:180px;
         font-size:${spaceFontSizeBorderLineHeight.fontSize.fontSizeMd};
-        background-color:blue;
+      
   }
       @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) and (min-width: ${breakpoint.breakPointSize.breakpointSm}) {
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
@@ -71,14 +72,13 @@ export const GridTextBoxStyle = styled.p`
         height:120px;
         font-size:${spaceFontSizeBorderLineHeight.fontSize.fontSizeXs};
       
-        background-color:yellow;
-        
+    
       }
       @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}){
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
         width:342px;
         height:96px;
-        background-color:aqua;
+
         padding-top:${spaceFontSizeBorderLineHeight.spacingStack.spacingStackXxl};
         margin:0px;
       }
@@ -93,10 +93,11 @@ export const GridAndTexResponsiveSizeBox = styled.div`
   flex-direction:row;
   justify-content:space-between;
   align-items:center;
-  background-color:gray;
+
 /*   @media (max-width: ${breakpoint.breakPointSize.breakpointLg}) and (min-width: ${breakpoint.breakPointSize.breakpointMd}){
     justify-content:space-around;
   } */
+  
   @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}){
         /* Defina seus estilos para telas maiores que 1440 pixels aqui */
       display:flex;

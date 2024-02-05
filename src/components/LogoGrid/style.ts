@@ -5,77 +5,71 @@ import { spaceFontSizeBorderLineHeight } from "../../tokens/spaceFontSizeBorderL
 export const GridContainer = styled.div`
 
   display: grid;
-  
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap:100px; /* Espaçamento entre as colunas */
-  background-color:red;
-  
-  
- 
-  @media (min-width: ${breakpoint.breakPointSize.breakpointLg}) {
-        /* Defina seus estilos para telas maiores que 1440 pixels aqui */
-        width:937px;
-        height:764px;
-
-        
-
-  };
-
-  @media (max-width: ${breakpoint.breakPointSize.breakpointLg}) and (min-width: ${breakpoint.breakPointSize.breakpointMd}){
-        /* Defina seus estilos para telas maiores que 1440 pixels aqui */
-        width:749px;
-        height:612px;
-        grid-column-gap:50px; 
-        background-color:aqua;
-  }
-      @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) and (min-width: ${breakpoint.breakPointSize.breakpointSm}) {
-        /* Defina seus estilos para telas maiores que 1440 pixels aqui */
-        width:544px;
-        height:496px;
-        column-gap:0px;
+  grid-column-gap:100px;
+    @media (min-width: ${breakpoint.breakPointSize.breakpointLg}) {
       
-        background-color:yellow;
-        
-      }
-      @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
-        /* Defina seus estilos para telas maiores que 1440 pixels aqui */
-        width:342px;
-        height:744px;
-        background-color:aqua;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap:0px;
-        padding-top:${spaceFontSizeBorderLineHeight.spacingStack.spacingStackSm};
+      width:937px;
+      height:764px;
+    };
+
+    @media (max-width: ${breakpoint.breakPointSize.breakpointLg}) and (min-width: ${breakpoint.breakPointSize.breakpointMd}){
+
+      width:749px;
+      height:612px;
+      grid-column-gap:50px; 
       
-       
-      }
+    }
+    @media (max-width:  ${breakpoint.breakPointSize.breakpointMd}) and (min-width: ${breakpoint.breakPointSize.breakpointSm}) {
+
+      width:544px;
+      height:496px;
+      column-gap:0px; 
+    }
+    @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
+      
+      width:342px;
+      height:744px;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap:0px;
+      padding-top:${spaceFontSizeBorderLineHeight.spacingStack.spacingStackSm};
+         
+    }
 `
 
-export const GridItem = styled.div<{ tamanho: string }>`
+
+export const GridImage = styled.img``
+
+export const GridItem = styled.div<{ sizeSvg: string }>`
+display: flex;
+justify-content: center;
+align-items: center;
 
 
-  border: solid 1px;
+
+border: solid 1px;
   background-color:green ;
-  img {
-    width: auto;
-    height: ${({ tamanho }) => tamanho};
+ ${GridImage} {
+   
+    height: ${({ sizeSvg }) => sizeSvg};
     display: block;
     margin: 0 auto;
   }
 
   @media (min-width: ${breakpoint.breakPointSize.breakpointLg}) {
-    img{
+   ${GridImage}{
       height: 176px;
     }
   }
 
   @media (max-width: ${breakpoint.breakPointSize.breakpointLg}) and (min-width: ${breakpoint.breakPointSize.breakpointMd}) {
-    img {
+   ${GridImage} {
       height: 113px;
     }
   }
 
   @media (max-width: ${breakpoint.breakPointSize.breakpointMd}) and (min-width: ${breakpoint.breakPointSize.breakpointSm}) {
-    img {
+   ${GridImage} {
       height: 124px;
     }
   }
@@ -86,4 +80,15 @@ export const GridItem = styled.div<{ tamanho: string }>`
        max-height: 96px; 
     }
   }
+
+
 `;
+
+
+
+
+export const GridSvgsStyle = styled.img`
+  display:flex;
+  align-items:center;
+  height:auto;
+`
