@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { GridContainer, GridItem, GridImage } from './style';
+import * as Styled from "./style";
 
 
 interface SVGGridProps {
@@ -12,13 +12,13 @@ criamos um estilo para montar um grid e mostrar as imagens. Os  svgs
 sao passados do componente GridAndText content*/
 const SVGGrid: React.FC<SVGGridProps> = ({ svgs, sizeSvg }) => {
   return (
-    <GridContainer>
+    <Styled.GridContainer>
       {svgs.map((svg, index) => (
-        <GridItem key={index} sizeSvg={sizeSvg}>
-          <GridImage className='gridImgSize' src={svg as string}  alt={`svg-${index}`} /> 
-        </GridItem>
+        <Styled.GridItem key={index} sizeSvg={sizeSvg}>
+          <Styled.GridImage className='gridImgSize' src={svg as string}  alt={`svg-${index}`} /> 
+        </Styled.GridItem>
       ))}
-    </GridContainer>
+    </Styled.GridContainer>
   );
 };
 

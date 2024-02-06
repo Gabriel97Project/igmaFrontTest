@@ -13,10 +13,7 @@ import SmartphoneImagesContainer from "../SmartphoneImagesContainer";
 import NewsletterContent from "../NewsletterContent";
 
 
-
-
 export default function Body() {
-
 
   return (
     <BodyStyle>
@@ -31,7 +28,6 @@ export default function Body() {
         <NewsletterContent />
         <SmartphoneImagesContainer />
       </NewsletterAndSmartphoneImagesContainer>
-
     </BodyStyle>
   )
 }

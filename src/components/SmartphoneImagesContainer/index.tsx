@@ -11,55 +11,47 @@ import smartphoneImageNine from "../../assets/celular9.png";
 import smartphoneImageTen from "../../assets/celular10.png";
 import smartphoneImageEleven from "../../assets/celular11.png";
 import smartphoneImageTwelve from "../../assets/celular12.png";
-import {
-  
-  SmartphoneAnimationStyle,
-  SmartphoneFirstColumnStyle,
-  SmartphoneFourthColumnStyle,
-  SmartphoneMobileSvgAnimationStyle,
-  SmartphoneMobileSvgStyle,
-  SmartphoneSecoundColumnStyle,
-  SmartphoneSvgs,
-  SmartphoneThirdColumnStyle
-} from './styled';
+import * as Styled from "./styled"
 
 function SmartphoneImagesContainer() {
 
-  const svImagesMobile: Array<string> = [smartphoneImageTwo, smartphoneImageFive, smartphoneImageEight, smartphoneImageEleven,smartphoneImageTwo, smartphoneImageFive, smartphoneImageEight, smartphoneImageEleven];
+  const svImagesMobile: Array<string> = [smartphoneImageTwo,
+    smartphoneImageFive,
+    smartphoneImageEight,
+    smartphoneImageEleven,
+    smartphoneImageTwo,
+    smartphoneImageFive,
+    smartphoneImageEight,
+    smartphoneImageEleven];
+
   return (
-
-
-
-
-    <SmartphoneAnimationStyle>
-      <SmartphoneFirstColumnStyle>
-        <SmartphoneSvgs src={smartphoneImageOne} alt="" />
-        <SmartphoneSvgs src={smartphoneImageTwo} alt="" />
-        <SmartphoneSvgs src={smartphoneImageThree} alt="" />
-      </SmartphoneFirstColumnStyle>
-      <SmartphoneSecoundColumnStyle>
-        <SmartphoneSvgs src={smartphoneImageFour} alt="" />
-        <SmartphoneSvgs src={smartphoneImageFive} alt="" />
-        <SmartphoneSvgs src={smartphoneImageSix} alt="" />
-      </SmartphoneSecoundColumnStyle>
-      <SmartphoneThirdColumnStyle>
-        <SmartphoneSvgs src={smartphoneImageSeven} alt="" />
-        <SmartphoneSvgs src={smartphoneImageEight} alt="" />
-        <SmartphoneSvgs src={smartphoneImageNine} alt="" />
-      </SmartphoneThirdColumnStyle>
-      <SmartphoneFourthColumnStyle>
-        <SmartphoneSvgs src={smartphoneImageTen} alt="" />
-        <SmartphoneSvgs src={smartphoneImageEleven} alt="" />
-        <SmartphoneSvgs src={smartphoneImageTwelve} alt="" />
-      </SmartphoneFourthColumnStyle>
-      <SmartphoneMobileSvgStyle>
-        {svImagesMobile.map (( imageMobileUnit, index) => {
-          return  <SmartphoneMobileSvgAnimationStyle key={index} src={imageMobileUnit} alt=""/>
-
-          
-        })} 
-      </SmartphoneMobileSvgStyle>
-    </SmartphoneAnimationStyle>
+    <Styled.SmartphoneAnimationStyle>
+      <Styled.SmartphoneFirstColumnStyle>
+        <Styled.SmartphoneSvgs src={smartphoneImageOne} alt="" />
+        <Styled.SmartphoneSvgs src={smartphoneImageTwo} alt="" />
+        <Styled.SmartphoneSvgs src={smartphoneImageThree} alt="" />
+      </Styled.SmartphoneFirstColumnStyle>
+      <Styled.SmartphoneSecoundColumnStyle>
+        <Styled.SmartphoneSvgs src={smartphoneImageFour} alt="" />
+        <Styled.SmartphoneSvgs src={smartphoneImageFive} alt="" />
+        <Styled.SmartphoneSvgs src={smartphoneImageSix} alt="" />
+      </Styled.SmartphoneSecoundColumnStyle>
+      <Styled.SmartphoneThirdColumnStyle>
+        <Styled.SmartphoneSvgs src={smartphoneImageSeven} alt="" />
+        <Styled.SmartphoneSvgs src={smartphoneImageEight} alt="" />
+        <Styled.SmartphoneSvgs src={smartphoneImageNine} alt="" />
+      </Styled.SmartphoneThirdColumnStyle>
+      <Styled.SmartphoneFourthColumnStyle>
+        <Styled.SmartphoneSvgs src={smartphoneImageTen} alt="" />
+        <Styled.SmartphoneSvgs src={smartphoneImageEleven} alt="" />
+        <Styled.SmartphoneSvgs src={smartphoneImageTwelve} alt="" />
+      </Styled.SmartphoneFourthColumnStyle>
+      <Styled.SmartphoneMobileSvgStyle>
+        {svImagesMobile.map((imageMobileUnit, index) => {
+          return <Styled.SmartphoneMobileSvgAnimationStyle key={index} src={imageMobileUnit} alt="" />
+        })}
+      </Styled.SmartphoneMobileSvgStyle>
+    </Styled.SmartphoneAnimationStyle>
   )
 }
 

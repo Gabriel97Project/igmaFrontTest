@@ -12,7 +12,6 @@ import google from "../../assets/google.svg";
 import honda from "../../assets/honda.svg";
 import ambev from "../../assets/ambev.svg";
 import sirioLibanes from "../../assets/hsl.svg";
-import brasilPres from "../../assets/brasilPrev.svg"
 
 
 function GridAndTextContent() {
