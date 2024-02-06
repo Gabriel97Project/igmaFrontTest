@@ -26,7 +26,8 @@ export const NewsletterContentStyle = styled.div`
     };
     @media  (max-width:  ${breakpoint.breakPointSize.breakpointSm}){
       width:342px;
-      height:400px;
+      height:450px;
+      padding-top:${spaceFontSizeBorderLineHeight.spacingStack.spacingStackXl};
     };
 `
 

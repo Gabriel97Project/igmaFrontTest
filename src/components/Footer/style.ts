@@ -41,7 +41,7 @@ export const FooterIgmaTextStyled =styled.p`
   text-align:left;
   margin: 0px;
     @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
-      width:100%;
+      width:90%;
     };
 `
 
@@ -53,6 +53,6 @@ export const FooterYearTextStyled =styled.p`
   line-height:${spaceFontSizeBorderLineHeight.lineHeight.lineHeightLg};
   color:${colors.baseColors.colorBaseDarkMain};
     @media (max-width:  ${breakpoint.breakPointSize.breakpointSm}) {
-      width:100%;
+      width:90%;
     };
 `
